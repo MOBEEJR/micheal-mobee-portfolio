@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Micheal Mobee</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Micheal Mobee</a>
+      <button class="nav-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="planner.html" class="nav-link">Planner</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container banner-content">
+        <div>
+          <span class="eyebrow">Projects</span>
+          <h1>Selected Academic and Web Applications</h1>
+          <p>A showcase of practical projects for cyber security and web development, designed with professional structure and responsive design.</p>
+        </div>
+        <a href="planner.html" class="button button-primary">Use Planner</a>
+      </div>
+    </section>
+
+    <section class="container projects-grid">
+      <article class="project-card glass-card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="AI technology illustration" />
+        <div class="project-copy">
+          <h2>AI-Powered Phishing Detection System</h2>
+          <p>This project uses machine learning concepts and pattern analysis to identify phishing attempts and protect users from fraudulent sites.</p>
+          <ul>
+            <li>Technologies: JavaScript, HTML, CSS</li>
+            <li>Status: Completed</li>
+          </ul>
+          <div class="project-actions">
+            <a href="#" class="button button-secondary">Live Preview</a>
+            <a href="#" class="button button-primary">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass-card">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80" alt="Hotel building" />
+        <div class="project-copy">
+          <h2>Building Website for Hotels</h2>
+          <p>Hotel website project featuring elegant hospitality design, booking information, and a modern mobile-friendly layout.</p>
+          <ul>
+            <li>Technologies: HTML, CSS, JavaScript</li>
+            <li>Status: Completed</li>
+          </ul>
+          <div class="project-actions">
+            <a href="#" class="button button-secondary">Live Preview</a>
+            <a href="#" class="button button-primary">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass-card">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1200&q=80" alt="School campus" />
+        <div class="project-copy">
+          <h2>Student Result Management System</h2>
+          <p>Responsive academic tool for tracking course results and summarizing student performance through intuitive dashboards and record management.</p>
+          <ul>
+            <li>Technologies: JavaScript, HTML, CSS</li>
+            <li>Status: In progress</li>
+          </ul>
+          <div class="project-actions">
+            <a href="#" class="button button-secondary">Live Demo</a>
+            <a href="#" class="button button-primary">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Micheal Mobee | MIVA Open University</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/planner.js"></script>
+  <script src="js/contact.js"></script>
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner | Micheal Mobee</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Micheal Mobee</a>
+      <button class="nav-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="planner.html" class="nav-link active">Planner</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container banner-content">
+        <div>
+          <span class="eyebrow">Academic Planner</span>
+          <h1>Task Management for Study Success</h1>
+          <p>Create, track, and complete study tasks with a responsive planner that saves progress locally.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container planner-section glass-card">
+      <div class="planner-actions">
+        <form id="task-form" class="task-form">
+          <div class="input-group">
+            <label for="task-title">Task Title</label>
+            <input type="text" id="task-title" placeholder="Add new task" required />
+          </div>
+          <div class="input-group">
+            <label for="task-desc">Description</label>
+            <textarea id="task-desc" rows="3" placeholder="Describe the task" required></textarea>
+          </div>
+          <button type="submit" class="button button-primary">Add Task</button>
+        </form>
+        <div class="planner-summary">
+          <div class="summary-card">
+            <h3>Total Tasks</h3>
+            <p id="task-count">0</p>
+          </div>
+          <div class="summary-card">
+            <h3>Completed</h3>
+            <p id="completed-count">0</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="task-list-section">
+        <h2>My Tasks</h2>
+        <div id="task-list" class="task-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Micheal Mobee | MIVA Open University</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/planner.js"></script>
+  <script src="js/contact.js"></script>
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

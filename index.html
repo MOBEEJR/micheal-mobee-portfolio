@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Student Portfolio | Micheal Mobee</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Micheal Mobee</a>
+      <button class="nav-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="planner.html" class="nav-link">Planner</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <article class="hero-copy glass-card">
+          <span class="eyebrow">Welcome to my portfolio</span>
+          <h1>Micheal Mobee</h1>
+          <p class="hero-intro">2025/B/CYB/0916 | Cyber Security | MIVA Open University</p>
+          <p>Hi, I am a driven cyber security student with a passion for building polished digital experiences and secure academic tools. I combine modern web design, development skills, and strong problem-solving to deliver professional projects.</p>
+          <div class="hero-buttons">
+            <a href="projects.html" class="button button-primary">View Projects</a>
+            <a href="planner.html" class="button button-secondary">Open Planner</a>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <h3>4.0</h3>
+              <p>CGPA</p>
+            </div>
+            <div class="stat-card">
+              <h3>5+</h3>
+              <p>Projects</p>
+            </div>
+            <div class="stat-card">
+              <h3>20+</h3>
+              <p>Skills Learned</p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="hero-image glass-card">
+          <img src="images/profile.jpg" alt="Micheal Mobee Profile" class="profile-photo" />
+          <div class="profile-info">
+            <h2>Micheal Mobee</h2>
+            <p>Cyber Security Student</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="overview-section container">
+      <div class="section-header">
+        <h2>Academic Highlights</h2>
+        <p>Track record of strong performance in cybersecurity, computing, and web technology courses.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="info-card glass-card">
+          <h3>Strong academics</h3>
+          <p>Exceptional grades in programming fundamentals, cyber security concepts, and network systems.</p>
+        </article>
+        <article class="info-card glass-card">
+          <h3>Practical skills</h3>
+          <p>Building interactive applications, managing tasks, and creating responsive user experiences.</p>
+        </article>
+        <article class="info-card glass-card">
+          <h3>Modern design</h3>
+          <p>Clean, accessible websites with animations, responsive layouts, and a polished interface.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Micheal Mobee | MIVA Open University</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="planner.html">Planner</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/planner.js"></script>
+  <script src="js/contact.js"></script>
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
